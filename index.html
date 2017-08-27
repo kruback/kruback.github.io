@@ -3,8 +3,7 @@
   <h3>DONT CLICK BELOW</h3>
 <a onclick="window.open ('http://www.google.com', ''); return false" href="javascript:void(0);">click here for fun!</a>
   <audio
-    src="Funny_guacamole_song_VIDEO-funny-guacamole-song.ogg"
-    autoplay>
+    <source src="Funny_guacamole_song_VIDEO-funny-guacamole-song.ogg" type="audio/ogg" />
     Your browser does not support the <code>audio</code> element.
   </audio>
   <script>
@@ -16,3 +15,9 @@
 
   <input type="button" value="more fun"  onclick="play()">
   <audio id="audio" src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" > test</audio>
+
+
+  <audio controls autoplay preload="auto" style="width:100%;" hidden="true">
+      <source src="Funny_guacamole_song_VIDEO-funny-guacamole-song.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+  </audio>
